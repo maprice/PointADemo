@@ -1,7 +1,6 @@
 package com.maprice.pointademo;
 
 import android.app.ListActivity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,9 +10,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PAActivity extends ListActivity {
+public class PACrashReporterActivity extends ListActivity {
 	 
-	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook" };
+	static final String[] LIST_ITEMS = new String[] { "Null pointer", "Array out of bounds"};
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -27,29 +26,9 @@ public class PAActivity extends ListActivity {
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				
-				
-				if(((TextView) view).getText().equals("Crash")){
-					Intent intent = new Intent(PAActivity.this, PACrashReporterActivity.class);
-					PAActivity.this.startActivity(intent);
-				}
-				else if(((TextView) view).getText().equals("Analytics")){
-					Intent intent = new Intent(PAActivity.this, PAAnalyticsActivity.class);
-					PAActivity.this.startActivity(intent);
-				}
-				else if(((TextView) view).getText().equals("Ads")){
-					Intent intent = new Intent(PAActivity.this, PAAdActivity.class);
-					PAActivity.this.startActivity(intent);
-				}
-				else{
-				
 			    // When clicked, show a toast with the TextView text
 			    Toast.makeText(getApplicationContext(),
 				((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-				}
-			    
-			    
-			    
 			}
 		});
  

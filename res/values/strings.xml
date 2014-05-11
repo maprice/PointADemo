@@ -4,5 +4,12 @@
     <string name="app_name">PointADemo</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+        <string name="activity_title_main">PointA Demo</string>
+     <string name="activity_title_ad">Ad Demo</string>
+      <string name="activity_title_analytic">Analytics Demo</string>
+       <string name="activity_title_billing">Billing Demo</string>
+        <string name="activity_title_cloud">Cloud Demo</string>
+         <string name="activity_title_crash">Crash Reporter Demo</string>
+          <string name="activity_title_facebook">Facebook Demo</string>
 
 </resources>
