@@ -7,14 +7,16 @@ import com.pointa.*;
 
 public class PAAdActivity extends Activity{
 	
+	RelativeLayout rel_layout;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.blank_activity);
 		
-		RelativeLayout RL = (RelativeLayout)findViewById(R.id.rel_layout);
+		rel_layout = (RelativeLayout)findViewById(R.id.rel_layout);
 		
 		PointA.init();
-		PointA.ads().showAd(RL, this);
+		PointA.ads().showAd(rel_layout, this);
 	}
 }
