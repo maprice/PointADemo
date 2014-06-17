@@ -19,7 +19,7 @@ public class PAActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
  
-		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa,LIST_ITEMS));
+		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa, LIST_ITEMS));
  
 		ListView listView = getListView();
 		listView.setTextFilterEnabled(true);
