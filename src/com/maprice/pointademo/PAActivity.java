@@ -1,5 +1,7 @@
 package com.maprice.pointademo;
 
+import com.pointa.PointA;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +20,9 @@ public class PAActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
- 
+		PointA.init(this.getApplication());
+		
+		
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa, LIST_ITEMS));
  
 		ListView listView = getListView();

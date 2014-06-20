@@ -16,7 +16,7 @@ public class PAAdActivity extends Activity{
 		
 		rel_layout = (RelativeLayout)findViewById(R.id.rel_layout);
 		
-		PointA.init();
+	
 		PointA.ads().showBannerAd(rel_layout, this);
 	}
 }

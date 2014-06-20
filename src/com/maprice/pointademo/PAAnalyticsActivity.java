@@ -20,7 +20,6 @@ public class PAAnalyticsActivity extends Activity{
 		setContentView(R.layout.linear_layout);
 		
 		lin_layout = (LinearLayout)findViewById(R.id.linear_layout);
-		PointA.init();
 		
 		for (int i = 1; i <= 3; i++){
 			b = new Button(this);

@@ -1,5 +1,7 @@
 package com.maprice.pointademo;
 
+import com.pointa.PointA;
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +19,11 @@ public class PACrashReporterActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
- 
+		
+		
+		
+		
+		PointA.crashReporter().startSession();
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa,LIST_ITEMS));
  
 		ListView listView = getListView();
@@ -27,9 +33,9 @@ public class PACrashReporterActivity extends ListActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 			    // When clicked, show a toast with the TextView text
-			    Toast.makeText(getApplicationContext(),
-				((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-			}
+			   int x[] = new int[3];
+			   int y = x[5];
+			   }
 		});
  
 	}
