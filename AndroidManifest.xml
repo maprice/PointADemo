@@ -9,6 +9,8 @@
         android:targetSdkVersion="17" />
     <uses-permission android:name="android.permission.INTERNET"/>
   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  	<uses-permission android:name="android.permission.READ_LOGS"/>
+  	<uses-permission android:name="android.permission.GET_TASKS"/>
 
     <application
         android:allowBackup="true"
@@ -40,6 +42,10 @@
         <activity
             android:name="com.maprice.pointademo.PAAnalyticsActivity"
             android:label="@string/activity_title_analytic" >
+        </activity>
+        <activity
+            android:name="com.maprice.pointademo.PARatingActivity"
+            android:label="@string/activity_title_rating" >
         </activity>
     </application>
 

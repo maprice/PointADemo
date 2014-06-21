@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class PAActivity extends ListActivity {
 	 
-	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook" };
+	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook", "Rating" };
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,10 @@ public class PAActivity extends ListActivity {
 				}
 				else if(((TextView) view).getText().equals("Ads")){
 					Intent intent = new Intent(PAActivity.this, PAAdActivity.class);
+					PAActivity.this.startActivity(intent);
+				}
+				else if(((TextView) view).getText().equals("Rating")){
+					Intent intent = new Intent(PAActivity.this, PARatingActivity.class);
 					PAActivity.this.startActivity(intent);
 				}
 				else{
