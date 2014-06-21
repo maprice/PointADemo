@@ -1,7 +1,5 @@
 package com.maprice.pointademo;
 
-import com.pointa.PointA;
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.pointa.PointA;
 
 public class PAActivity extends ListActivity {
 	 

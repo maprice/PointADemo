@@ -19,6 +19,7 @@ public class PACrashReporterActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		PointA.crashReporter().logException(new RuntimeException("Non-fatal"));
 		
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa,LIST_ITEMS));
 
