@@ -22,6 +22,7 @@ public class PAActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		PointA.init(this.getApplication());
 		
+		PointA.push().setDefaultPushCallback(this, PAActivity.class);
 		
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa, LIST_ITEMS));
  
