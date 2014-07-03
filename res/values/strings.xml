@@ -12,5 +12,5 @@
     <string name="activity_title_crash">Crash Reporter Demo</string>
     <string name="activity_title_facebook">Facebook Demo</string>
      <string name="activity_title_rating">Rating Demo</string>
-
+  <string name="activity_title_twitter">Twitter Demo</string>
 </resources>

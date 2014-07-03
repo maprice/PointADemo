@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
 
-<!--   PARSE -->
+    <!-- PARSE -->
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -30,7 +30,7 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.maprice.pointademo.permission.C2D_MESSAGE" />
-<!--   PARSE -->
+    <!-- PARSE -->
 
     <application
         android:allowBackup="true"
@@ -66,6 +66,25 @@
             android:name="com.maprice.pointademo.PARatingActivity"
             android:label="@string/activity_title_rating" >
         </activity>
+        <activity
+            android:name="com.maprice.pointademo.PATwitterActivity"
+            android:label="@string/activity_title_twitter" >
+             <intent-filter>
+                
+            <action android:name="android.intent.action.VIEW" />
+                
+            <category android:name="android.intent.category.DEFAULT" />
+                
+            <category android:name="android.intent.category.BROWSABLE" />
+                
+            <data
+                android:host="t4jsample"
+                android:scheme="oauth" />
+            
+        </intent-filter>
+        </activity>
+                    
+       
 
         <service android:name="com.parse.PushService" />
 

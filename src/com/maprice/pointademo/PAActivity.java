@@ -15,14 +15,14 @@ import com.pointa.PointA;
 
 public class PAActivity extends ListActivity {
 	 
-	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook", "Rating" };
+	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook", "Rating", "Twitter" };
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		PointA.init(this.getApplication());
 		
-		PointA.push().setDefaultPushCallback(this, PAActivity.class);
+		//PointA.push().setDefaultPushCallback(this, PAActivity.class);
 		
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_pa, LIST_ITEMS));
  
@@ -48,6 +48,10 @@ public class PAActivity extends ListActivity {
 				}
 				else if(((TextView) view).getText().equals("Rating")){
 					Intent intent = new Intent(PAActivity.this, PARatingActivity.class);
+					PAActivity.this.startActivity(intent);
+				}
+				else if(((TextView) view).getText().equals("Twitter")){
+					Intent intent = new Intent(PAActivity.this, PATwitterActivity.class);
 					PAActivity.this.startActivity(intent);
 				}
 				else{
