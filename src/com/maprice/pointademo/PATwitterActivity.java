@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.pointa.PointA;
-import com.pointa.service.twitter.AlertDialogManager;
 
 public class PATwitterActivity extends Activity {
 	// Constants
@@ -28,10 +27,6 @@ public class PATwitterActivity extends Activity {
 
 	// Progress dialog
 	ProgressDialog pDialog;
-
-	
-	// Alert Dialog Manager
-	AlertDialogManager alert = new AlertDialogManager();
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
