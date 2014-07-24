@@ -5,12 +5,12 @@
 
 ##Overview
 
-The PointA demo app is a simple android application that utilizes the basic functionalities of the services through the PointA library. The goal is to allow developers to test the functionalities of the services through PointA to ensure that the services have been setup and operate properly through PointA. This isolates issues with the app and the PointA Library and therefore improves the testability of the PointA Library  
+The PointA demo app is a simple android application that utilizes the basic functionalities of the services through the PointA library. The goal is to allow developers to test the functionalities of the services through PointA to ensure that the services have been setup and operate properly through PointA Library. This isolates issues with the app and the PointA Library and therefore improves the testability of the PointA Library. 
 
 
 ##Features
 
-* Listview of all services and service providers
+* Listview of all services, service providers and basic functionalities
 * Basic functionalities of each service such as showAd, post tweets, logEvent for Analytic, Users can tap a button on the phone to invoke these services
 
 
