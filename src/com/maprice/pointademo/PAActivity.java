@@ -15,7 +15,7 @@ import com.pointa.PointA;
 
 public class PAActivity extends ListActivity {
 	 
-	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook", "Rating", "Twitter" };
+	static final String[] LIST_ITEMS = new String[] { "Ads", "Analytics", "Billing", "Cloud", "Crash", "Facebook", "Rating"};
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -48,10 +48,6 @@ public class PAActivity extends ListActivity {
 				}
 				else if(((TextView) view).getText().equals("Rating")){
 					Intent intent = new Intent(PAActivity.this, PARatingActivity.class);
-					PAActivity.this.startActivity(intent);
-				}
-				else if(((TextView) view).getText().equals("Twitter")){
-					Intent intent = new Intent(PAActivity.this, PATwitterActivity.class);
 					PAActivity.this.startActivity(intent);
 				}
 				else{
