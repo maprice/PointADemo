@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
-import com.pointa.*;
+import com.pointa.PointA;
 
 public class PAAdActivity extends Activity{
 
@@ -32,8 +32,8 @@ public class PAAdActivity extends Activity{
 			}
 		});
 		
-		rel_layout.addView(showBanner);
-		rel_layout.addView(hideBanner);
+		//rel_layout.addView(showBanner);
+		//rel_layout.addView(hideBanner);
 
 
 		PointA.ads().precacheInterstitialAd(this);
